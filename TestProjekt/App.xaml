@@ -1,0 +1,17 @@
+﻿<Application x:Class="TestProjekt.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:viewmodels="clr-namespace:TestProjekt.ViewModels"
+             xmlns:views="clr-namespace:TestProjekt.Views"
+             xmlns:local="clr-namespace:TestProjekt">
+    <Application.Resources>
+        <ResourceDictionary>
+            <DataTemplate DataType="{x:Type viewmodels:HomeViewModel}">
+                <views:HomeView/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type viewmodels:InputViewModel}">
+                <views:InputView/>
+            </DataTemplate>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
